@@ -8,29 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
-      <search>
-        <form>
-          <input
-            type="text"
-            name="search-text"
-            id="search-text"
-            placeholder="Search images..."
-          />
-          <button type="submit">Search</button>
-        </form>
-      </search>
+    <div class="container">
+      <form class="form">
+        <input type="text" name="search" placeholder="Search images..." />
 
-      <p class="loader-box hidden"><span class="loader"></span></p>
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="loader"></div>
+
       <ul class="gallery"></ul>
-    </main>
+    </div>
 
-    <script src="./main.js" type="module"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
