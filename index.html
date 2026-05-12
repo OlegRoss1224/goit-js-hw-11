@@ -5,9 +5,30 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 11</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-DvPDDfy5.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-Ia4qoNTj.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-mdZ-SibM.css">
   </head>
   <body>
-    <main class="container"></main>
+    <div class="container">
+      <form class="form">
+        <label>
+          <input
+            class="search-input"
+            type="text"
+            name="search-text"
+            placeholder="Search images..."
+            required
+          />
+        </label>
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+      <ul class="gallery"></ul>
+      <div class="loader-container hidden">
+        <span class="loader is-active"></span>
+      </div>
+
+    </div>
   </body>
 </html>
