@@ -27,7 +27,7 @@ function handleSubmit(event) {
     });
     return;
   }
-  gallery.innerHTML = '';
+  clearGallery();
   showLoader();
 
   getImagesByQuery(userFlower)

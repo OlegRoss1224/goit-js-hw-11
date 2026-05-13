@@ -1,15 +1,15 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import 'css-loader';
 
 const loaderContainer = document.querySelector('.loader-container');
+const gallery = document.querySelector('.gallery');
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
 
-export function createGallery(images, container) {
+export function createGallery(images, gallery) {
   const markup = images
     .map(
       ({
@@ -39,12 +39,12 @@ export function createGallery(images, container) {
       `
     )
     .join('');
-  container.innerHTML = markup;
+  gallery.innerHTML = markup;
   lightbox.refresh();
 }
 
 export function clearGallery() {
-  container.innerHTML = '';
+  gallery.innerHTML = '';
 }
 export function showLoader() {
   loaderContainer.classList.remove('hidden');
