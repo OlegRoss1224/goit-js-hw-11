@@ -40,7 +40,7 @@ function handleSubmit(event) {
         });
         return;
       }
-      createGallery(data.hits, gallery);
+      createGallery(data.hits);
     })
     .catch(error => {
       console.log(error);
