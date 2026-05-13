@@ -20,7 +20,7 @@ function handleSubmit(event) {
   const userFlower = event.currentTarget.elements['search-text'].value.trim();
 
   if (userFlower === '') {
-    gallery.innerHTML = '';
+    clearGallery();
     iziToast.error({
       message: 'Please enter a search query!',
       position: 'topRight',
